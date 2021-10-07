@@ -3,11 +3,12 @@ import React from 'react'
 function TDatos() {
     return (
         <tr>
-            <th> Identficador </th>
-            <th> Descripcion </th>
-            <th> Valor unitario </th>
-            <th> Estado </th>
-            <th> Acciones </th>
+            <th> Identficador de venta </th>
+            <th> Producto </th>
+            <th> Valor </th>
+            <th> ID. Cliente </th>
+            <th> Nombre Cliente </th>
+            <th> ... </th>
         </tr>
     )
 }

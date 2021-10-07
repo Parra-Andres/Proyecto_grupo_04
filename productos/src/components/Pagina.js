@@ -2,6 +2,7 @@ import React from 'react'
 import BandaSuperior from './BandaSuperior'
 import Navegacion from './Navegacion'
 import Productos from './Productos'
+import Registrar from './Registrar'
 
 function Pagina() {
     return (
@@ -9,6 +10,7 @@ function Pagina() {
             <BandaSuperior />
             <Navegacion />
             <Productos />
+            
         </div>
     )
 }

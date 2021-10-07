@@ -5,7 +5,7 @@ function Entrada() {
         <div className = "buscarID">
             <input type="text"
             className = "entradaTest"
-            value = {'ID Producto'}
+            value = {'Identificador único'}
             />
             <button className = "botonBuscar">Buscar</button>
         </div>

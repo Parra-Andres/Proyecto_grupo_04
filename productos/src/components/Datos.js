@@ -4,11 +4,13 @@ function Datos() {
     return (
         <tr>
             <td> 123456679 </td>
-            <td> Panela </td>
-            <td> 10 $ </td>
-            <td> Disponible </td>
-            <td> <button class="actions">Editar</button><button class="actions">Eliminar</button>  </td>
+            <td> tutifruti </td>
+            <td> $2000 </td>
+            <td> 12345 </td>
+            <td> perensejo </td>
+            <td> <button class="actions">Editar</button></td>
         </tr>
+        
     )
 }
 

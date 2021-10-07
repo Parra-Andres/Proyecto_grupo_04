@@ -116,6 +116,41 @@ body {
   width: 85%;
 }
 
+.agregar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 2050px;
+}
+
+.finalizar {
+  margin-top: 5px;
+  margin-left: 5%;
+  background-color: gray;
+  width:200px;
+  height:30px;
+  color: #ddd;
+  border-radius: 10px;
+  
+}
+
+
+
+.registrarventa {
+  margin-top: 15px;
+  color: #ddd;
+  background-color: #004B7F;
+  width:200px;
+  height:30px;
+  border-radius: 10px;
+}
+
+.botonBuscar {
+  border-radius: 10px;
+  
+}
+
+
 .tableUsers tr th {
   background-color: gray;
   padding: 10px;
@@ -133,6 +168,7 @@ body {
 .buscarID {
   position: fixed;
   padding: 5px;
+  
 }
 
 .addProduct {
