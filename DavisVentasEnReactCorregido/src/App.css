@@ -84,6 +84,16 @@ body {
   height: 90%;
 }
 
+.seccionfinal{
+  position: fixed;
+  top: 60%;
+  right: 0;
+  width: 100%;
+  height: 90%;
+}
+
+
+
 .TituloProductos {
   position: fixed;
   right: 0;
