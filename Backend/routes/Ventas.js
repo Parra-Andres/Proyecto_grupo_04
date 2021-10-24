@@ -18,12 +18,15 @@ BuscarVenta);
 router.post(
     '/crearVenta',
     [
-        check('id','el codigo de venta es obligatorio').not().isEmpty(),
-        check('producto','el nombre del producto es obligatorio').not().isEmpty(),
-        check('Valor', 'el precio de la venta es obligatorio').not().isEmpty(),
-        check('id_vendedor', 'la identificacion del vendedor es obligatoria').not().isEmpty(),
+        check('id_Venta','el codigo de venta es obligatorio').not().isEmpty(),
+        check('id_producto','el codigo de producto es obligatorio').not().isEmpty(),
+        check('Nombre_producto','el nombre del producto es obligatorio').not().isEmpty(),
+        check('Valor_Producto', 'el precio de la venta es obligatorio').not().isEmpty(),
+        check('Cantidad_Producto', 'la cantidad del producto es obligatoria').not().isEmpty(),
         check('id_cliente', 'la identificacion del cliente es obligatorio').not().isEmpty(),
         check('Nombre_cliente', 'el nombre del cliente es obligatorio').not().isEmpty(),
+        check('id_vendedor', 'la identificacion del vendedor es obligatoria').not().isEmpty(),  
+        check('Fecha','la fecha es obligatoria').not().isEmpty(),
         check('Estado','El estado inicial de la venta es obligatorio').not().isEmpty(),
         validarCampos
     ], validarJwt,
@@ -32,11 +35,15 @@ crearVenta);
 router.post(
     '/ActualizarVenta',
     [
-        check('id','el codigo de venta es obligatorio').not().isEmpty(),
-        check('producto','el nombre del producto es obligatorio').not().isEmpty(),
-        check('Valor', 'el precio de la venta es obligatorio').not().isEmpty(),
+        check('id_Venta','el codigo de venta es obligatorio').not().isEmpty(),
+        check('id_producto','el codigo de producto es obligatorio').not().isEmpty(),
+        check('Nombre_producto','el nombre del producto es obligatorio').not().isEmpty(),
+        check('Valor_Producto', 'el precio de la venta es obligatorio').not().isEmpty(),
+        check('Cantidad_Producto', 'la cantidad del producto es obligatoria').not().isEmpty(),
         check('id_cliente', 'la identificacion del cliente es obligatorio').not().isEmpty(),
         check('Nombre_cliente', 'el nombre del cliente es obligatorio').not().isEmpty(),
+        check('id_vendedor', 'la identificacion del vendedor es obligatoria').not().isEmpty(),  
+        check('Fecha','la fecha es obligatoria').not().isEmpty(),
         check('Estado','El estado inicial de la venta es obligatorio').not().isEmpty(),
         validarCampos
     ], validarJwt,
