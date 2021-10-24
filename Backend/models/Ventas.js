@@ -3,16 +3,34 @@ const Estado = require ('./Estado')
 
 const VentasSchema = Schema(
     {
-        id: {
-            type: String,
+        id_Venta: {
+            type: Number,
             required: true
         },
-        producto: {
-            type: Schema.Types.ObjectId,
+        id_producto: {
+            type: Schema.Types.Number,
+            ref : "Producto",
+            required: true
+        },
+        Nombre_producto: {
+            type: Schema.Types.String,
             ref: "Producto",
             required: true,
         },
-        Valor: {
+        Valor_Producto: {
+            type: Schema.Types.Number,
+            ref: "Producto",
+            required: true
+        },
+        Cantidad_Producto: {
+            type: Number,
+            required: true
+        },
+        id_cliente: {
+            type: String,
+            required: true
+        },
+        Nombre_cliente: {
             type: String,
             required: true
         },
@@ -21,8 +39,12 @@ const VentasSchema = Schema(
             ref: "Usuario",
             required: true
         },
-        id_cliente: {
-            type: String,
+        Fecha:{
+            type: Date,
+            required: true
+        },
+        Valor_Total:{
+            type: Number,
             required: true
         },
         Estado: {
@@ -30,10 +52,7 @@ const VentasSchema = Schema(
             ref: "Estado",
             required: true
         },
-        Nombre_cliente: {
-            type: String,
-            required: true
-        }
+        
     },
 )
 
