@@ -20,6 +20,7 @@ const BuscarVenta = async (req, resp = response) => {
 
     try {
         const Venta = await Ventas.findOne({ 'id': VentId })
+        
 
         if (!Venta) {
             resp.status(404).json({
