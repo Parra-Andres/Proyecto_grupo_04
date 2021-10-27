@@ -9,7 +9,7 @@ const {
     actualizarVenta,
     buscarVenta,
     getEstados
-} = require("../controllers/ventas");
+} = require("../controllers/Ventas");
 const { validarJwt } = require("../middlewares/validar-jwt");
 
 router.get("/listarVentas", validarJwt, getVentas);
